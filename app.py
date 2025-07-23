@@ -2,11 +2,17 @@ import streamlit as st
 import pickle
 import string
 import nltk
+from nltk.tokenize import word_tokenize
+# Ensure punkt tokenizer is available
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+text = "Hello! I'm your Streamlit app."
+tokens = word_tokenize(text)
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-nltk.download('stopwords')
-nltk.download('punkt')
 
 # Initialize stemmer
 ps = PorterStemmer()
