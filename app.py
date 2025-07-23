@@ -1,12 +1,6 @@
 import streamlit as st
 import pickle
 import string
-import nltk
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
@@ -14,6 +8,11 @@ from nltk.stem import PorterStemmer
 # Initialize stemmer
 ps = PorterStemmer()
 
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 # Function to clean and preprocess text
 def transform_text(text):
     text = text.lower()
