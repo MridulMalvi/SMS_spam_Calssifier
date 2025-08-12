@@ -1,13 +1,16 @@
 import streamlit as st
 import pickle
 import string
-import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
 # Download NLTK data only if not already present
-nltk.download('stopwords', quiet=True)
-nltk.download('punkt', quiet=True)
+import nltk
+
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('punkt_tab')  
+
 
 # Initialize stemmer
 ps = PorterStemmer()
