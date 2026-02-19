@@ -48,7 +48,6 @@ The app takes an SMS as input, processes it, and predicts whether it is spam.
 
 ---
 
-
 ## 📦 Tech Stack  
 
 - **Python** – Core programming language for development  
@@ -57,7 +56,6 @@ The app takes an SMS as input, processes it, and predicts whether it is spam.
 - **NLTK** – Natural Language Processing for text cleaning and tokenization  
 - **Streamlit** – Web app framework for UI and deployment  
 - **Pickle** – Model & vectorizer serialization for saving/loading  
-
 
 ---
 
